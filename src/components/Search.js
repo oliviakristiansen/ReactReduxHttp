@@ -4,7 +4,7 @@ const Search = ({ repos, onSearchTextChanged, onSearch, searchText }) => {
 
   const repoLinks = 
     <ul>
-      {repos.map(repo => <li><a href={ repo.url } key={ repo.id }>{ repo.name }</a></li>)}
+      {repos.map(repo => <li key={ repo.id }><a href={ repo.url }>{ repo.name }</a></li>)}
     </ul>
     
 
